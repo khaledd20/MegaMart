@@ -11,6 +11,7 @@ const routes: Routes = [
     path: 'products', 
     loadChildren: () => import('./features/user/products/products.module').then(m => m.ProductsModule) 
   },
+  
 
   // Fallback route in case of unknown paths
   { path: '**', redirectTo: '', pathMatch: 'full' }
