@@ -1,0 +1,16 @@
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <a routerLink="/" class="logo-link">MEGA MART</a> <!-- Logo link -->
+    </div>
+
+    <div class="navbar-links">
+      <a routerLink="/" class="nav-link">Home</a>
+      <a routerLink="/products" class="nav-link">Products</a>
+      <a routerLink="/cart" class="nav-link cart-link">
+        <span>Shopping Cart</span>
+        <span class="cart-count">({{ cartItemCount }})</span> <!-- Cart item count -->
+      </a>
+    </div>
+  </nav>
+</header>

@@ -1,4 +1,10 @@
+.modal-content {
+  text-align: center;
+}
+
 .modal-image {
-  width: 100%; /* Responsive image */
+  width: 100%;
   height: auto;
+  max-height: 500px; /* Adjust the size of the image in the modal */
+  object-fit: contain;
 }

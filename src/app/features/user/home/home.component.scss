@@ -1,11 +1,15 @@
-.home-container {
-    text-align: center;
-    margin-top: 50px;
+header {
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+
+  nav {
+    margin-top: 10px;
+
+    a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #007bff;
+    }
   }
-  h1 {
-    color: #3f51b5;
-  }
-  p {
-    font-size: 18px;
-  }
-  
+}

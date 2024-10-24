@@ -1,7 +1,5 @@
-// product-modal.component.ts
 import { Component, Inject } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { Product } from '../product.model'; // Adjust the path based on your structure
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-product-modal',
@@ -9,13 +7,5 @@ import { Product } from '../product.model'; // Adjust the path based on your str
   styleUrls: ['./product-modal.component.css']
 })
 export class ProductModalComponent {
-
-  constructor(
-    public dialogRef: MatDialogRef<ProductModalComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: Product // Adjust type based on your product model
-  ) {}
-
-  onNoClick(): void {
-    this.dialogRef.close(); // Closes the modal
-  }
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any) {}
 }

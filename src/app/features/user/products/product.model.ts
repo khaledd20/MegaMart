@@ -5,4 +5,5 @@ export interface Product {
   description: string;
   image: string; // URL for product image
   category: string; // e.g., "electronics", "jewelery", etc.
+  quantity?: number; // Optional quantity property
 }
